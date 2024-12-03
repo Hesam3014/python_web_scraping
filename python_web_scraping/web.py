@@ -5,6 +5,7 @@ import plotly.graph_objects as go
 from collections import deque
 from urllib.parse import urlparse
 
+
 def get_links(url, max_links=20):
     """Extract links from a web page, limited to a specified number."""
     try:
@@ -22,6 +23,7 @@ def get_links(url, max_links=20):
     except Exception as e:
         print(f"Error extracting links: {e}")
         return set()
+
 
 def crawl_web(start_url, max_depth=10, max_links=20):
     """Crawl the web to extract links and construct a graph."""
@@ -46,13 +48,48 @@ def crawl_web(start_url, max_depth=10, max_links=20):
     print(f"Total edges: {graph.number_of_edges()}")
     return graph
 
+
 def get_short_name(url):
     """Extract a short name (domain) from a URL."""
     parsed_url = urlparse(url)
     return parsed_url.netloc
 
-def display_interactive_graph(graph, output_file="web_graph_2.html"):
-    """Create and save an interactive graph with clickable nodes."""
+
+def bfs(graph, start_node):
+    """Perform BFS on the graph starting from the specified node."""
+    visited = set()
+    queue = deque([start_node])
+    bfs_order = []
+
+    while queue:
+        node = queue.popleft()
+        if node not in visited:
+            visited.add(node)
+            bfs_order.append(node)
+            queue.extend(graph.neighbors(node))  # Add all neighbors to the queue
+    
+    return bfs_order
+
+
+def dfs(graph, start_node, visited=None, dfs_order=None):
+    """Perform DFS on the graph starting from the specified node."""
+    if visited is None:
+        visited = set()
+    if dfs_order is None:
+        dfs_order = []
+
+    visited.add(start_node)
+    dfs_order.append(start_node)
+
+    for neighbor in graph.neighbors(start_node):
+        if neighbor not in visited:
+            dfs(graph, neighbor, visited, dfs_order)
+    
+    return dfs_order
+
+
+def display_colored_graph(graph, order, start_node, end_node, output_file, color):
+    """Display the graph with BFS or DFS traversal highlighted."""
     pos = nx.spring_layout(graph, seed=42)
     edge_x = []
     edge_y = []
@@ -75,15 +112,24 @@ def display_interactive_graph(graph, output_file="web_graph_2.html"):
 
     node_x = []
     node_y = []
+    node_color = []
     node_text = []
-    node_links = []
 
     for node in graph.nodes():
         x, y = pos[node]
         node_x.append(x)
         node_y.append(y)
         node_text.append(graph.nodes[node].get('label', node))
-        node_links.append(node)  # Save the full URL for the node
+
+        # Set colors based on traversal order, start, and end nodes
+        if node == start_node:
+            node_color.append('yellow')
+        elif node == end_node:
+            node_color.append('red')
+        elif node in order:
+            node_color.append(color)
+        else:
+            node_color.append('#87CEEB')  # Default color
 
     node_trace = go.Scatter(
         x=node_x, y=node_y,
@@ -93,12 +139,12 @@ def display_interactive_graph(graph, output_file="web_graph_2.html"):
         hoverinfo='text',
         marker=dict(
             size=20,
-            color='#87CEEB',
+            color=node_color,
             line_width=2))
 
     fig = go.Figure(data=[edge_trace, node_trace],
                     layout=go.Layout(
-                        title='<br>Interactive Site Reference Graph',
+                        title=f'<br>{output_file.split(".")[0].capitalize()} Graph',
                         titlefont_size=16,
                         showlegend=False,
                         hovermode='closest',
@@ -106,84 +152,28 @@ def display_interactive_graph(graph, output_file="web_graph_2.html"):
                         xaxis=dict(showgrid=False, zeroline=False),
                         yaxis=dict(showgrid=False, zeroline=False)))
 
-    # Add clickable links
-    for i, url in enumerate(node_links):
-        fig.add_annotation(
-            x=node_x[i], y=node_y[i],
-            text=f"<a href='{url}' target='_blank'>{node_text[i]}</a>",
-            showarrow=False,
-            font=dict(size=12, color="black"))
-
     fig.write_html(output_file)
     print(f"Graph saved as {output_file}. Open it in your browser to view.")
 
-def bfs(graph, start_node):
-    """Perform BFS on the graph starting from the specified node."""
-    visited = set()
-    queue = deque([start_node])
-    bfs_order = []
-
-    while queue:
-        node = queue.popleft()
-        if node not in visited:
-            visited.add(node)
-            bfs_order.append(node)
-            queue.extend(graph.neighbors(node))  # Add all neighbors to the queue
-    
-    return bfs_order
-
-def dfs(graph, start_node, visited=None, dfs_order=None):
-    """Perform DFS on the graph starting from the specified node."""
-    if visited is None:
-        visited = set()
-    if dfs_order is None:
-        dfs_order = []
-
-    visited.add(start_node)
-    dfs_order.append(start_node)
-
-    for neighbor in graph.neighbors(start_node):
-        if neighbor not in visited:
-            dfs(graph, neighbor, visited, dfs_order)
-    
-    return dfs_order
 
 if __name__ == "__main__":
-    start_url = input("Enter the URL of the web page: ")
+    start_url = input("Enter the start URL of the web page: ")
     max_depth = int(input("Enter the crawling depth (maximum 10): "))
     web_graph = crawl_web(start_url, max_depth, max_links=20)
-    display_interactive_graph(web_graph)
 
-    while True:
-        print("\nChoose an operation:")
-        print("1. Perform BFS")
-        print("2. Perform DFS")
-        print("3. Exit")
-        choice = input("Enter your choice (1/2/3): ")
+    # Display discovered nodes and ask for the end node
+    print("\nDiscovered Nodes:")
+    for i, node in enumerate(web_graph.nodes()):
+        print(f"{i + 1}: {node}")
 
-        if choice == "1":
-            bfs_start = input("Enter the start URL for BFS: ")
-            if bfs_start in web_graph.nodes:
-                bfs_result = bfs(web_graph, bfs_start)
-                print("\nBFS Traversal Order:")
-                for url in bfs_result:
-                    print(url)
-            else:
-                print("The entered URL is not in the graph.")
+    end_node_index = int(input("\nSelect the end node by number: ")) - 1
+    end_node = list(web_graph.nodes())[end_node_index]
 
-        elif choice == "2":
-            dfs_start = input("Enter the start URL for DFS: ")
-            if dfs_start in web_graph.nodes:
-                dfs_result = dfs(web_graph, dfs_start)
-                print("\nDFS Traversal Order:")
-                for url in dfs_result:
-                    print(url)
-            else:
-                print("The entered URL is not in the graph.")
+    # Perform BFS and DFS
+    bfs_result = bfs(web_graph, start_url)
+    dfs_result = dfs(web_graph, start_url)
 
-        elif choice == "3":
-            print("Exiting the program.")
-            break
-
-        else:
-            print("Invalid choice. Please try again.")
+    # Generate HTML files for each traversal
+    display_colored_graph(web_graph, [], start_node=start_url, end_node=end_node, output_file="web_graph.html", color="#87CEEB")
+    display_colored_graph(web_graph, bfs_result, start_node=start_url, end_node=end_node, output_file="bfs_graph.html", color="green")
+    display_colored_graph(web_graph, dfs_result, start_node=start_url, end_node=end_node, output_file="dfs_graph.html", color="blue")
