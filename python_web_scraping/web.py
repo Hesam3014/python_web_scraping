@@ -117,8 +117,73 @@ def display_interactive_graph(graph, output_file="web_graph_2.html"):
     fig.write_html(output_file)
     print(f"Graph saved as {output_file}. Open it in your browser to view.")
 
+def bfs(graph, start_node):
+    """Perform BFS on the graph starting from the specified node."""
+    visited = set()
+    queue = deque([start_node])
+    bfs_order = []
+
+    while queue:
+        node = queue.popleft()
+        if node not in visited:
+            visited.add(node)
+            bfs_order.append(node)
+            queue.extend(graph.neighbors(node))  # Add all neighbors to the queue
+    
+    return bfs_order
+
+def dfs(graph, start_node, visited=None, dfs_order=None):
+    """Perform DFS on the graph starting from the specified node."""
+    if visited is None:
+        visited = set()
+    if dfs_order is None:
+        dfs_order = []
+
+    visited.add(start_node)
+    dfs_order.append(start_node)
+
+    for neighbor in graph.neighbors(start_node):
+        if neighbor not in visited:
+            dfs(graph, neighbor, visited, dfs_order)
+    
+    return dfs_order
+
 if __name__ == "__main__":
     start_url = input("Enter the URL of the web page: ")
     max_depth = int(input("Enter the crawling depth (maximum 10): "))
     web_graph = crawl_web(start_url, max_depth, max_links=20)
     display_interactive_graph(web_graph)
+
+    while True:
+        print("\nChoose an operation:")
+        print("1. Perform BFS")
+        print("2. Perform DFS")
+        print("3. Exit")
+        choice = input("Enter your choice (1/2/3): ")
+
+        if choice == "1":
+            bfs_start = input("Enter the start URL for BFS: ")
+            if bfs_start in web_graph.nodes:
+                bfs_result = bfs(web_graph, bfs_start)
+                print("\nBFS Traversal Order:")
+                for url in bfs_result:
+                    print(url)
+            else:
+                print("The entered URL is not in the graph.")
+
+        elif choice == "2":
+            dfs_start = input("Enter the start URL for DFS: ")
+            if dfs_start in web_graph.nodes:
+                dfs_result = dfs(web_graph, dfs_start)
+                print("\nDFS Traversal Order:")
+                for url in dfs_result:
+                    print(url)
+            else:
+                print("The entered URL is not in the graph.")
+
+        elif choice == "3":
+            print("Exiting the program.")
+            break
+
+        else:
+            print("Invalid choice. Please try again.")
