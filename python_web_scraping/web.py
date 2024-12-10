@@ -199,6 +199,135 @@ def display_colored_graph(graph, order, start_node, end_node, output_file, color
     print(f"Graph saved as {output_file}. Open it in your browser to view.")
 
 
+def topological_sort(graph):
+    """Perform topological sorting on the graph if it's a DAG."""
+    try:
+        order = list(nx.topological_sort(graph))
+        print("\nTopological Sort Order:")
+        for i, node in enumerate(order):
+            print(f"{i + 1}: {node}")
+        return order
+    except nx.NetworkXUnfeasible:
+        print("\nThe graph contains cycles and is not a DAG. Topological sorting is not possible.")
+        return None
+
+
+def kosaraju(graph):
+    """Perform Kosaraju's algorithm to find strongly connected components (SCCs)."""
+    # Step 1: DFS on original graph to get finishing times
+    def dfs_first_pass(node, visited, stack):
+        visited.add(node)
+        for neighbor in graph.neighbors(node):
+            if neighbor not in visited:
+                dfs_first_pass(neighbor, visited, stack)
+        stack.append(node)  # Push the node to stack after visiting all neighbors
+
+    stack = []
+    visited = set()
+    for node in graph.nodes():
+        if node not in visited:
+            dfs_first_pass(node, visited, stack)
+
+    # Step 2: Reverse the graph
+    reversed_graph = graph.reverse()
+
+    # Step 3: DFS on reversed graph in order of finishing times
+    def dfs_second_pass(node, visited, scc):
+        visited.add(node)
+        scc.append(node)
+        for neighbor in reversed_graph.neighbors(node):
+            if neighbor not in visited:
+                dfs_second_pass(neighbor, visited, scc)
+
+    visited.clear()
+    sccs = []
+    while stack:
+        node = stack.pop()
+        if node not in visited:
+            scc = []
+            dfs_second_pass(node, visited, scc)
+            sccs.append(scc)
+
+    return sccs
+
+
+def display_colored_graph_with_scc(graph, order, start_node, end_node, output_file, color, sccs=None):
+    """Display the graph with BFS, DFS, or Kosaraju's SCCs highlighted."""
+    pos = nx.spring_layout(graph, seed=42)
+    edge_x = []
+    edge_y = []
+
+    for edge in graph.edges():
+        x0, y0 = pos[edge[0]]
+        x1, y1 = pos[edge[1]]
+        edge_x.append(x0)
+        edge_x.append(x1)
+        edge_x.append(None)
+        edge_y.append(y0)
+        edge_y.append(y1)
+        edge_y.append(None)
+
+    edge_trace = go.Scatter(
+        x=edge_x, y=edge_y,
+        line=dict(width=0.5, color='#888'),
+        hoverinfo='none',
+        mode='lines')
+
+    node_x = []
+    node_y = []
+    node_color = []
+    node_text = []
+
+    # If SCCs are provided, color them differently
+    scc_colors = {}
+    if sccs:
+        for idx, scc in enumerate(sccs):
+            for node in scc:
+                scc_colors[node] = f"rgb({(idx * 50) % 255}, {(idx * 100) % 255}, 255)"
+
+    for node in graph.nodes():
+        x, y = pos[node]
+        node_x.append(x)
+        node_y.append(y)
+        node_text.append(graph.nodes[node].get('label', node))
+
+        # Set colors based on traversal order, start, end nodes, or SCCs
+        if node == start_node:
+            node_color.append('yellow')
+        elif node == end_node:
+            node_color.append('red')
+        elif node in order:
+            node_color.append(color)
+        elif node in scc_colors:
+            node_color.append(scc_colors[node])
+        else:
+            node_color.append('#87CEEB')  # Default color
+
+    node_trace = go.Scatter(
+        x=node_x, y=node_y,
+        mode='markers+text',
+        text=node_text,
+        textposition="top center",
+        hoverinfo='text',
+        marker=dict(
+            size=20,
+            color=node_color,
+            line_width=2))
+
+    fig = go.Figure(data=[edge_trace, node_trace],
+                    layout=go.Layout(
+                        title=f'<br>{output_file.split(".")[0].capitalize()} Graph',
+                        titlefont_size=16,
+                        showlegend=False,
+                        hovermode='closest',
+                        margin=dict(b=0, l=0, r=0, t=40),
+                        xaxis=dict(showgrid=False, zeroline=False),
+                        yaxis=dict(showgrid=False, zeroline=False)))
+
+    fig.write_html(output_file)
+    print(f"Graph saved as {output_file}. Open it in your browser to view.")
+
+
 if __name__ == "__main__":
     folder_path = os.path.dirname(os.path.abspath(__file__))  # Save files in script's directory
 
@@ -225,10 +354,25 @@ if __name__ == "__main__":
     bfs_result = bfs(web_graph, start_url)
     dfs_result = dfs(web_graph, start_url)
 
+    # Perform Kosaraju's algorithm
+    kosaraju_sccs = kosaraju(web_graph)
+
+    # Perform Topological Sorting
+    topo_sort_result = topological_sort(web_graph)
+
+    # Save topological sort order to a file if it exists
+    if topo_sort_result:
+        topo_file = os.path.join(folder_path, "topological_order.txt")
+        with open(topo_file, 'w') as f:
+            f.write("\n".join(topo_sort_result))
+        print(f"\nTopological order saved to {topo_file}.")
+
     # Generate HTML files for each traversal
-    display_colored_graph(web_graph, [], start_node=start_url, end_node=end_node,
-                          output_file=os.path.join(folder_path, "web_graph.html"), color="#87CEEB")
-    display_colored_graph(web_graph, bfs_result, start_node=start_url, end_node=end_node,
-                          output_file=os.path.join(folder_path, "bfs_graph.html"), color="green")
-    display_colored_graph(web_graph, dfs_result, start_node=start_url, end_node=end_node,
-                          output_file=os.path.join(folder_path, "dfs_graph.html"), color="blue")
+    display_colored_graph_with_scc(web_graph, [], start_node=start_url, end_node=end_node,
+                                   output_file=os.path.join(folder_path, "web_graph.html"), color="#87CEEB")
+    display_colored_graph_with_scc(web_graph, bfs_result, start_node=start_url, end_node=end_node,
+                                   output_file=os.path.join(folder_path, "bfs_graph.html"), color="green")
+    display_colored_graph_with_scc(web_graph, dfs_result, start_node=start_url, end_node=end_node,
+                                   output_file=os.path.join(folder_path, "dfs_graph.html"), color="blue")
+    display_colored_graph_with_scc(web_graph, [], start_node=start_url, end_node=end_node,
+                                   output_file=os.path.join(folder_path, "kosaraju_graph.html"), color="purple", sccs=kosaraju_sccs)

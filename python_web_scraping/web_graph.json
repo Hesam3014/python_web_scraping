@@ -7,9 +7,15 @@
             }
         ],
         [
-            "https://t.me/filimo",
+            "http://twitter.com/filimocom",
             {
-                "label": "t.me"
+                "label": "twitter.com"
+            }
+        ],
+        [
+            "https://www.aparat.com/filimo",
+            {
+                "label": "www.aparat.com"
             }
         ],
         [
@@ -25,9 +31,9 @@
             }
         ],
         [
-            "http://twitter.com/filimocom",
+            "https://www.aparat.com/v/d2fri/",
             {
-                "label": "twitter.com"
+                "label": "www.aparat.com"
             }
         ],
         [
@@ -37,376 +43,186 @@
             }
         ],
         [
+            "https://t.me/filimo",
+            {
+                "label": "t.me"
+            }
+        ],
+        [
             "https://www.aparat.com/v/lQyvT/",
             {
                 "label": "www.aparat.com"
             }
         ],
         [
-            "https://www.aparat.com/v/d2fri/",
-            {
-                "label": "www.aparat.com"
-            }
-        ],
-        [
-            "https://www.aparat.com/filimo",
-            {
-                "label": "www.aparat.com"
-            }
-        ],
-        [
-            "https://career.hrcando.ir/co/sabaidea/job-detail/37432780-9491-4488-8cac-d059f14a30e3",
-            {
-                "label": "career.hrcando.ir"
-            }
-        ],
-        [
-            "https://www.sabaidea.com/job",
-            {
-                "label": "www.sabaidea.com"
-            }
-        ],
-        [
-            "https://career.hrcando.ir/co/sabaidea/job-detail/f9ec656a-5689-4b97-9633-dea517fe5096",
-            {
-                "label": "career.hrcando.ir"
-            }
-        ],
-        [
-            "https://www.sabaidea.com/story",
-            {
-                "label": "www.sabaidea.com"
-            }
-        ],
-        [
-            "https://www.sabaidea.com/products",
-            {
-                "label": "www.sabaidea.com"
-            }
-        ],
-        [
-            "https://career.hrcando.ir/co/sabaidea/job-detail/69666055-b91f-47f6-832c-4b2b791ff2a7",
-            {
-                "label": "career.hrcando.ir"
-            }
-        ],
-        [
-            "https://career.hrcando.ir/co/sabaidea/job-detail/059ef0df-6f94-4aef-bf2f-aaa40e9e4bcf",
-            {
-                "label": "career.hrcando.ir"
-            }
-        ],
-        [
-            "https://career.hrcando.ir/co/sabaidea/job-detail/2a54be11-6e36-423a-b6d4-d4287eb92335",
-            {
-                "label": "career.hrcando.ir"
-            }
-        ],
-        [
-            "https://career.hrcando.ir/co/sabaidea/job-detail/e671ae2d-a006-43ec-8f51-8e693aadab17",
-            {
-                "label": "career.hrcando.ir"
-            }
-        ],
-        [
-            "https://career.hrcando.ir/co/sabaidea/job-detail/e9adb29e-4ae6-4279-b90b-4b62cd8cb8d3",
-            {
-                "label": "career.hrcando.ir"
-            }
+            "https://career.hrcando.ir/co/sabaidea/job-detail/19c21ae3-6f1b-4ae8-9670-f01857e4e9b4",
+            {}
         ],
         [
             "https://www.sabaidea.com/contact",
-            {
-                "label": "www.sabaidea.com"
-            }
+            {}
         ],
         [
-            "https://www.sabaidea.com/",
-            {
-                "label": "www.sabaidea.com"
-            }
+            "https://career.hrcando.ir/co/sabaidea/job-detail/e671ae2d-a006-43ec-8f51-8e693aadab17",
+            {}
         ],
         [
-            "https://www.sabaidea.com/life",
-            {
-                "label": "www.sabaidea.com"
-            }
+            "https://www.sabaidea.com/job",
+            {}
+        ],
+        [
+            "https://career.hrcando.ir/co/sabaidea/job-detail/69666055-b91f-47f6-832c-4b2b791ff2a7",
+            {}
         ],
         [
             "https://career.hrcando.ir/co/sabaidea/job-detail/2af121fc-9e43-47e6-a493-cd46c8f8b964",
-            {
-                "label": "career.hrcando.ir"
-            }
-        ],
-        [
-            "https://career.hrcando.ir/co/sabaidea/job-detail/38213743-6bf0-43e3-994f-2345e09f0c81",
-            {
-                "label": "career.hrcando.ir"
-            }
+            {}
         ],
         [
             "https://www.sabaidea.com/press",
-            {
-                "label": "www.sabaidea.com"
-            }
+            {}
         ],
         [
-            "https://career.hrcando.ir/co/sabaidea/job-detail/19c21ae3-6f1b-4ae8-9670-f01857e4e9b4",
-            {
-                "label": "career.hrcando.ir"
-            }
-        ],
-        [
-            "https://career.hrcando.ir/co/sabaidea/job-detail/d5bbeea5-f098-4606-998c-78b15d6fb709",
-            {
-                "label": "career.hrcando.ir"
-            }
+            "https://career.hrcando.ir/co/sabaidea/job-detail/37432780-9491-4488-8cac-d059f14a30e3",
+            {}
         ],
         [
             "https://www.instagram.com/sabaidea",
-            {
-                "label": "www.instagram.com"
-            }
+            {}
+        ],
+        [
+            "https://career.hrcando.ir/co/sabaidea/job-detail/e9adb29e-4ae6-4279-b90b-4b62cd8cb8d3",
+            {}
+        ],
+        [
+            "https://www.sabaidea.com/",
+            {}
+        ],
+        [
+            "https://career.hrcando.ir/co/sabaidea/job-detail/f9ec656a-5689-4b97-9633-dea517fe5096",
+            {}
+        ],
+        [
+            "https://career.hrcando.ir/co/sabaidea/job-detail/059ef0df-6f94-4aef-bf2f-aaa40e9e4bcf",
+            {}
+        ],
+        [
+            "https://www.sabaidea.com/products",
+            {}
+        ],
+        [
+            "https://career.hrcando.ir/co/sabaidea/job-detail/38213743-6bf0-43e3-994f-2345e09f0c81",
+            {}
+        ],
+        [
+            "https://career.hrcando.ir/co/sabaidea/job-detail/d5bbeea5-f098-4606-998c-78b15d6fb709",
+            {}
+        ],
+        [
+            "https://career.hrcando.ir/co/sabaidea/job-detail/2a54be11-6e36-423a-b6d4-d4287eb92335",
+            {}
+        ],
+        [
+            "https://www.sabaidea.com/life",
+            {}
         ],
         [
             "https://career.hrcando.ir/co/sabaidea/job-detail/450f71bb-34e3-465c-8905-f75a5cc49249",
-            {
-                "label": "career.hrcando.ir"
-            }
+            {}
         ],
         [
-            "https://app.filimo.school/courses/3",
-            {
-                "label": "app.filimo.school"
-            }
-        ],
-        [
-            "https://app.filimo.school/contact",
-            {
-                "label": "app.filimo.school"
-            }
-        ],
-        [
-            "https://blog.filimo.school",
-            {
-                "label": "blog.filimo.school"
-            }
-        ],
-        [
-            "https://app.filimo.school/courses/12",
-            {
-                "label": "app.filimo.school"
-            }
-        ],
-        [
-            "https://app.filimo.school/auth?utm_source=filimo-web&utm_medium=navigation&utm_campaign=filimo-user&utm_content=home",
-            {
-                "label": "app.filimo.school"
-            }
-        ],
-        [
-            "https://app.filimo.school/courses/8",
-            {
-                "label": "app.filimo.school"
-            }
-        ],
-        [
-            "https://app.filimo.school/courses/1",
-            {
-                "label": "app.filimo.school"
-            }
-        ],
-        [
-            "https://app.filimo.school/courses/9",
-            {
-                "label": "app.filimo.school"
-            }
-        ],
-        [
-            "https://app.filimo.school/courses/10",
-            {
-                "label": "app.filimo.school"
-            }
-        ],
-        [
-            "https://app.filimo.school/courses/7",
-            {
-                "label": "app.filimo.school"
-            }
-        ],
-        [
-            "https://app.filimo.school/courses/2",
-            {
-                "label": "app.filimo.school"
-            }
-        ],
-        [
-            "https://app.filimo.school/courses/13",
-            {
-                "label": "app.filimo.school"
-            }
-        ],
-        [
-            "https://app.filimo.school/courses/4",
-            {
-                "label": "app.filimo.school"
-            }
-        ],
-        [
-            "https://app.filimo.school/",
-            {
-                "label": "app.filimo.school"
-            }
-        ],
-        [
-            "https://app.filimo.school/courses/6",
-            {
-                "label": "app.filimo.school"
-            }
+            "https://www.sabaidea.com/story",
+            {}
         ],
         [
             "https://app.filimo.school/courses/5",
-            {
-                "label": "app.filimo.school"
-            }
+            {}
         ],
         [
-            "https://app.filimo.school/course/8w9op",
-            {
-                "label": "app.filimo.school"
-            }
+            "https://app.filimo.school/courses/8",
+            {}
         ],
         [
-            "https://app.filimo.school/course/82y5j",
-            {
-                "label": "app.filimo.school"
-            }
+            "https://app.filimo.school/courses/2",
+            {}
+        ],
+        [
+            "https://app.filimo.school/courses/6",
+            {}
+        ],
+        [
+            "https://app.filimo.school/courses/10",
+            {}
         ],
         [
             "https://app.filimo.school/download",
-            {
-                "label": "app.filimo.school"
-            }
+            {}
+        ],
+        [
+            "https://app.filimo.school/courses/3",
+            {}
+        ],
+        [
+            "https://app.filimo.school/contact",
+            {}
+        ],
+        [
+            "https://app.filimo.school/course/82y5j",
+            {}
+        ],
+        [
+            "https://app.filimo.school/courses/7",
+            {}
+        ],
+        [
+            "https://app.filimo.school/courses/12",
+            {}
+        ],
+        [
+            "https://app.filimo.school/courses/13",
+            {}
+        ],
+        [
+            "https://blog.filimo.school",
+            {}
+        ],
+        [
+            "https://app.filimo.school/auth?utm_source=filimo-web&utm_medium=navigation&utm_campaign=filimo-user&utm_content=home",
+            {}
+        ],
+        [
+            "https://app.filimo.school/",
+            {}
+        ],
+        [
+            "https://app.filimo.school/courses/9",
+            {}
+        ],
+        [
+            "https://app.filimo.school/courses/1",
+            {}
+        ],
+        [
+            "https://app.filimo.school/courses/4",
+            {}
+        ],
+        [
+            "https://app.filimo.school/course/8w9op",
+            {}
         ],
         [
             "https://app.filimo.school/courses/11",
-            {
-                "label": "app.filimo.school"
-            }
-        ],
-        [
-            "https://career.hrcando.ir/co/sabaidea/job-detail/05e93dc4-6993-49dd-804c-f9263bb44096",
-            {}
-        ],
-        [
-            "https://career.hrcando.ir/co/sabaidea/job-detail/4dae875e-17f8-4b7c-95b3-5e4084b14ecf",
-            {}
-        ],
-        [
-            "https://career.hrcando.ir/co/sabaidea/job-detail/c14ba61f-6b3d-49b6-95bd-bb8e7d12c691",
-            {}
-        ],
-        [
-            "https://career.hrcando.ir/co/sabaidea/job-detail/910027fd-9ea8-43f9-a165-bd40ce5440ee",
-            {}
-        ],
-        [
-            "https://career.hrcando.ir/co/sabaidea/job-detail/421359a1-7f5b-4816-a98e-e42fdec4c577",
-            {}
-        ],
-        [
-            "https://www.aparat.com/sabaidea",
-            {}
-        ],
-        [
-            "https://career.hrcando.ir/co/sabaidea/job-detail/f7b41d9f-5fa8-44fc-af76-69c716eb3271",
-            {}
-        ],
-        [
-            "https://www.linkedin.com/company/9272995",
-            {}
-        ],
-        [
-            "https://twitter.com/SabaIdea",
-            {}
-        ],
-        [
-            "http://aparat.com",
-            {}
-        ],
-        [
-            "https://www.aparatsport.com",
-            {}
-        ],
-        [
-            "http://filimo.com",
-            {}
-        ],
-        [
-            "https://www.filimo.com/kids",
-            {}
-        ],
-        [
-            "https://www.filimo.com/kids/",
-            {}
-        ],
-        [
-            "https://www.filimo.school",
-            {}
-        ],
-        [
-            "http://sabavision.com",
-            {}
-        ],
-        [
-            "http://cinematicket.org",
-            {}
-        ],
-        [
-            "http://shanbemag.ir/%D8%A2%D9%BE%D8%A7%D8%B1%D8%A7%D8%AA%D8%8C-%DB%8C%DA%A9-%DA%A9%D8%B3%D8%A8%E2%80%8C%D9%88%DA%A9%D8%A7%D8%B1-300-%D9%85%DB%8C%D9%84%DB%8C%D9%88%D9%86-%D8%AF%D9%84%D8%A7%D8%B1%DB%8C",
-            {}
-        ],
-        [
-            "https://digiato.com/article/2018/06/10/%DA%AF%D9%81%D8%AA%DA%AF%D9%88-%D8%A8%D8%A7-%D9%85%D8%AF%DB%8C%D8%B1%D8%B9%D8%A7%D9%85%D9%84-%D8%B5%D8%A8%D8%A7-%D8%A7%DB%8C%D8%AF%D9%87/",
-            {}
-        ],
-        [
-            "https://sabaidea.com/life/480-%D8%B3%D9%81%D8%B1%D9%87%D8%A7%DB%8C-%DA%AF%D8%B1%D9%88%D9%87%DB%8C",
-            {}
-        ],
-        [
-            "https://job.sabaidea.com",
-            {}
-        ],
-        [
-            "https://t.me/Filimoschool",
-            {}
-        ],
-        [
-            "https://twitter.com/FilimoSchool",
-            {}
-        ],
-        [
-            "https://instagram.com/filimo.madrese",
-            {}
-        ],
-        [
-            "https://static.cdn.asset.filimo.school/flmt/FilimoSchool-Android-4.9.4-w-1.apk",
-            {}
-        ],
-        [
-            "https://twitter.com/filimoschool",
-            {}
-        ],
-        [
-            "https://app.filimo.school/auth?redirect=%2Fprofile%2Fpayment&source=header",
             {}
         ]
     ],
     "edges": [
         [
             "https://www.filimo.com/",
-            "https://t.me/filimo"
+            "http://twitter.com/filimocom"
+        ],
+        [
+            "https://www.filimo.com/",
+            "https://www.aparat.com/filimo"
         ],
         [
             "https://www.filimo.com/",
@@ -418,7 +234,7 @@
         ],
         [
             "https://www.filimo.com/",
-            "http://twitter.com/filimocom"
+            "https://www.aparat.com/v/d2fri/"
         ],
         [
             "https://www.filimo.com/",
@@ -426,79 +242,11 @@
         ],
         [
             "https://www.filimo.com/",
+            "https://t.me/filimo"
+        ],
+        [
+            "https://www.filimo.com/",
             "https://www.aparat.com/v/lQyvT/"
-        ],
-        [
-            "https://www.filimo.com/",
-            "https://www.aparat.com/v/d2fri/"
-        ],
-        [
-            "https://www.filimo.com/",
-            "https://www.aparat.com/filimo"
-        ],
-        [
-            "https://job.sabaidea.com/",
-            "https://career.hrcando.ir/co/sabaidea/job-detail/37432780-9491-4488-8cac-d059f14a30e3"
-        ],
-        [
-            "https://job.sabaidea.com/",
-            "https://www.sabaidea.com/job"
-        ],
-        [
-            "https://job.sabaidea.com/",
-            "https://career.hrcando.ir/co/sabaidea/job-detail/f9ec656a-5689-4b97-9633-dea517fe5096"
-        ],
-        [
-            "https://job.sabaidea.com/",
-            "https://www.sabaidea.com/story"
-        ],
-        [
-            "https://job.sabaidea.com/",
-            "https://www.sabaidea.com/products"
-        ],
-        [
-            "https://job.sabaidea.com/",
-            "https://career.hrcando.ir/co/sabaidea/job-detail/69666055-b91f-47f6-832c-4b2b791ff2a7"
-        ],
-        [
-            "https://job.sabaidea.com/",
-            "https://career.hrcando.ir/co/sabaidea/job-detail/059ef0df-6f94-4aef-bf2f-aaa40e9e4bcf"
-        ],
-        [
-            "https://job.sabaidea.com/",
-            "https://career.hrcando.ir/co/sabaidea/job-detail/2a54be11-6e36-423a-b6d4-d4287eb92335"
-        ],
-        [
-            "https://job.sabaidea.com/",
-            "https://career.hrcando.ir/co/sabaidea/job-detail/e671ae2d-a006-43ec-8f51-8e693aadab17"
-        ],
-        [
-            "https://job.sabaidea.com/",
-            "https://career.hrcando.ir/co/sabaidea/job-detail/e9adb29e-4ae6-4279-b90b-4b62cd8cb8d3"
-        ],
-        [
-            "https://job.sabaidea.com/",
-            "https://www.sabaidea.com/contact"
-        ],
-        [
-            "https://job.sabaidea.com/",
-            "https://www.sabaidea.com/"
-        ],
-        [
-            "https://job.sabaidea.com/",
-            "https://www.sabaidea.com/life"
-        ],
-        [
-            "https://job.sabaidea.com/",
-            "https://career.hrcando.ir/co/sabaidea/job-detail/2af121fc-9e43-47e6-a493-cd46c8f8b964"
-        ],
-        [
-            "https://job.sabaidea.com/",
-            "https://career.hrcando.ir/co/sabaidea/job-detail/38213743-6bf0-43e3-994f-2345e09f0c81"
-        ],
-        [
-            "https://job.sabaidea.com/",
-            "https://www.sabaidea.com/press"
         ],
         [
             "https://job.sabaidea.com/",
@@ -506,7 +254,31 @@
         ],
         [
             "https://job.sabaidea.com/",
-            "https://career.hrcando.ir/co/sabaidea/job-detail/d5bbeea5-f098-4606-998c-78b15d6fb709"
+            "https://www.sabaidea.com/contact"
+        ],
+        [
+            "https://job.sabaidea.com/",
+            "https://career.hrcando.ir/co/sabaidea/job-detail/e671ae2d-a006-43ec-8f51-8e693aadab17"
+        ],
+        [
+            "https://job.sabaidea.com/",
+            "https://www.sabaidea.com/job"
+        ],
+        [
+            "https://job.sabaidea.com/",
+            "https://career.hrcando.ir/co/sabaidea/job-detail/69666055-b91f-47f6-832c-4b2b791ff2a7"
+        ],
+        [
+            "https://job.sabaidea.com/",
+            "https://career.hrcando.ir/co/sabaidea/job-detail/2af121fc-9e43-47e6-a493-cd46c8f8b964"
+        ],
+        [
+            "https://job.sabaidea.com/",
+            "https://www.sabaidea.com/press"
+        ],
+        [
+            "https://job.sabaidea.com/",
+            "https://career.hrcando.ir/co/sabaidea/job-detail/37432780-9491-4488-8cac-d059f14a30e3"
         ],
         [
             "https://job.sabaidea.com/",
@@ -514,7 +286,71 @@
         ],
         [
             "https://job.sabaidea.com/",
+            "https://career.hrcando.ir/co/sabaidea/job-detail/e9adb29e-4ae6-4279-b90b-4b62cd8cb8d3"
+        ],
+        [
+            "https://job.sabaidea.com/",
+            "https://www.sabaidea.com/"
+        ],
+        [
+            "https://job.sabaidea.com/",
+            "https://career.hrcando.ir/co/sabaidea/job-detail/f9ec656a-5689-4b97-9633-dea517fe5096"
+        ],
+        [
+            "https://job.sabaidea.com/",
+            "https://career.hrcando.ir/co/sabaidea/job-detail/059ef0df-6f94-4aef-bf2f-aaa40e9e4bcf"
+        ],
+        [
+            "https://job.sabaidea.com/",
+            "https://www.sabaidea.com/products"
+        ],
+        [
+            "https://job.sabaidea.com/",
+            "https://career.hrcando.ir/co/sabaidea/job-detail/38213743-6bf0-43e3-994f-2345e09f0c81"
+        ],
+        [
+            "https://job.sabaidea.com/",
+            "https://career.hrcando.ir/co/sabaidea/job-detail/d5bbeea5-f098-4606-998c-78b15d6fb709"
+        ],
+        [
+            "https://job.sabaidea.com/",
+            "https://career.hrcando.ir/co/sabaidea/job-detail/2a54be11-6e36-423a-b6d4-d4287eb92335"
+        ],
+        [
+            "https://job.sabaidea.com/",
+            "https://www.sabaidea.com/life"
+        ],
+        [
+            "https://job.sabaidea.com/",
             "https://career.hrcando.ir/co/sabaidea/job-detail/450f71bb-34e3-465c-8905-f75a5cc49249"
+        ],
+        [
+            "https://job.sabaidea.com/",
+            "https://www.sabaidea.com/story"
+        ],
+        [
+            "https://www.filimo.school/?utm_source=filimo-web&utm_medium=navigation&utm_campaign=filimo-user&utm_content=home",
+            "https://app.filimo.school/courses/5"
+        ],
+        [
+            "https://www.filimo.school/?utm_source=filimo-web&utm_medium=navigation&utm_campaign=filimo-user&utm_content=home",
+            "https://app.filimo.school/courses/8"
+        ],
+        [
+            "https://www.filimo.school/?utm_source=filimo-web&utm_medium=navigation&utm_campaign=filimo-user&utm_content=home",
+            "https://app.filimo.school/courses/2"
+        ],
+        [
+            "https://www.filimo.school/?utm_source=filimo-web&utm_medium=navigation&utm_campaign=filimo-user&utm_content=home",
+            "https://app.filimo.school/courses/6"
+        ],
+        [
+            "https://www.filimo.school/?utm_source=filimo-web&utm_medium=navigation&utm_campaign=filimo-user&utm_content=home",
+            "https://app.filimo.school/courses/10"
+        ],
+        [
+            "https://www.filimo.school/?utm_source=filimo-web&utm_medium=navigation&utm_campaign=filimo-user&utm_content=home",
+            "https://app.filimo.school/download"
         ],
         [
             "https://www.filimo.school/?utm_source=filimo-web&utm_medium=navigation&utm_campaign=filimo-user&utm_content=home",
@@ -526,7 +362,11 @@
         ],
         [
             "https://www.filimo.school/?utm_source=filimo-web&utm_medium=navigation&utm_campaign=filimo-user&utm_content=home",
-            "https://blog.filimo.school"
+            "https://app.filimo.school/course/82y5j"
+        ],
+        [
+            "https://www.filimo.school/?utm_source=filimo-web&utm_medium=navigation&utm_campaign=filimo-user&utm_content=home",
+            "https://app.filimo.school/courses/7"
         ],
         [
             "https://www.filimo.school/?utm_source=filimo-web&utm_medium=navigation&utm_campaign=filimo-user&utm_content=home",
@@ -534,39 +374,15 @@
         ],
         [
             "https://www.filimo.school/?utm_source=filimo-web&utm_medium=navigation&utm_campaign=filimo-user&utm_content=home",
-            "https://app.filimo.school/auth?utm_source=filimo-web&utm_medium=navigation&utm_campaign=filimo-user&utm_content=home"
-        ],
-        [
-            "https://www.filimo.school/?utm_source=filimo-web&utm_medium=navigation&utm_campaign=filimo-user&utm_content=home",
-            "https://app.filimo.school/courses/8"
-        ],
-        [
-            "https://www.filimo.school/?utm_source=filimo-web&utm_medium=navigation&utm_campaign=filimo-user&utm_content=home",
-            "https://app.filimo.school/courses/1"
-        ],
-        [
-            "https://www.filimo.school/?utm_source=filimo-web&utm_medium=navigation&utm_campaign=filimo-user&utm_content=home",
-            "https://app.filimo.school/courses/9"
-        ],
-        [
-            "https://www.filimo.school/?utm_source=filimo-web&utm_medium=navigation&utm_campaign=filimo-user&utm_content=home",
-            "https://app.filimo.school/courses/10"
-        ],
-        [
-            "https://www.filimo.school/?utm_source=filimo-web&utm_medium=navigation&utm_campaign=filimo-user&utm_content=home",
-            "https://app.filimo.school/courses/7"
-        ],
-        [
-            "https://www.filimo.school/?utm_source=filimo-web&utm_medium=navigation&utm_campaign=filimo-user&utm_content=home",
-            "https://app.filimo.school/courses/2"
-        ],
-        [
-            "https://www.filimo.school/?utm_source=filimo-web&utm_medium=navigation&utm_campaign=filimo-user&utm_content=home",
             "https://app.filimo.school/courses/13"
         ],
         [
             "https://www.filimo.school/?utm_source=filimo-web&utm_medium=navigation&utm_campaign=filimo-user&utm_content=home",
-            "https://app.filimo.school/courses/4"
+            "https://blog.filimo.school"
+        ],
+        [
+            "https://www.filimo.school/?utm_source=filimo-web&utm_medium=navigation&utm_campaign=filimo-user&utm_content=home",
+            "https://app.filimo.school/auth?utm_source=filimo-web&utm_medium=navigation&utm_campaign=filimo-user&utm_content=home"
         ],
         [
             "https://www.filimo.school/?utm_source=filimo-web&utm_medium=navigation&utm_campaign=filimo-user&utm_content=home",
@@ -574,11 +390,15 @@
         ],
         [
             "https://www.filimo.school/?utm_source=filimo-web&utm_medium=navigation&utm_campaign=filimo-user&utm_content=home",
-            "https://app.filimo.school/courses/6"
+            "https://app.filimo.school/courses/9"
         ],
         [
             "https://www.filimo.school/?utm_source=filimo-web&utm_medium=navigation&utm_campaign=filimo-user&utm_content=home",
-            "https://app.filimo.school/courses/5"
+            "https://app.filimo.school/courses/1"
+        ],
+        [
+            "https://www.filimo.school/?utm_source=filimo-web&utm_medium=navigation&utm_campaign=filimo-user&utm_content=home",
+            "https://app.filimo.school/courses/4"
         ],
         [
             "https://www.filimo.school/?utm_source=filimo-web&utm_medium=navigation&utm_campaign=filimo-user&utm_content=home",
@@ -586,667 +406,7 @@
         ],
         [
             "https://www.filimo.school/?utm_source=filimo-web&utm_medium=navigation&utm_campaign=filimo-user&utm_content=home",
-            "https://app.filimo.school/course/82y5j"
-        ],
-        [
-            "https://www.filimo.school/?utm_source=filimo-web&utm_medium=navigation&utm_campaign=filimo-user&utm_content=home",
-            "https://app.filimo.school/download"
-        ],
-        [
-            "https://www.filimo.school/?utm_source=filimo-web&utm_medium=navigation&utm_campaign=filimo-user&utm_content=home",
             "https://app.filimo.school/courses/11"
-        ],
-        [
-            "https://www.sabaidea.com/job",
-            "https://career.hrcando.ir/co/sabaidea/job-detail/37432780-9491-4488-8cac-d059f14a30e3"
-        ],
-        [
-            "https://www.sabaidea.com/job",
-            "https://career.hrcando.ir/co/sabaidea/job-detail/05e93dc4-6993-49dd-804c-f9263bb44096"
-        ],
-        [
-            "https://www.sabaidea.com/job",
-            "https://career.hrcando.ir/co/sabaidea/job-detail/4dae875e-17f8-4b7c-95b3-5e4084b14ecf"
-        ],
-        [
-            "https://www.sabaidea.com/job",
-            "https://career.hrcando.ir/co/sabaidea/job-detail/c14ba61f-6b3d-49b6-95bd-bb8e7d12c691"
-        ],
-        [
-            "https://www.sabaidea.com/job",
-            "https://career.hrcando.ir/co/sabaidea/job-detail/f9ec656a-5689-4b97-9633-dea517fe5096"
-        ],
-        [
-            "https://www.sabaidea.com/job",
-            "https://career.hrcando.ir/co/sabaidea/job-detail/69666055-b91f-47f6-832c-4b2b791ff2a7"
-        ],
-        [
-            "https://www.sabaidea.com/job",
-            "https://career.hrcando.ir/co/sabaidea/job-detail/059ef0df-6f94-4aef-bf2f-aaa40e9e4bcf"
-        ],
-        [
-            "https://www.sabaidea.com/job",
-            "https://career.hrcando.ir/co/sabaidea/job-detail/2a54be11-6e36-423a-b6d4-d4287eb92335"
-        ],
-        [
-            "https://www.sabaidea.com/job",
-            "https://career.hrcando.ir/co/sabaidea/job-detail/e671ae2d-a006-43ec-8f51-8e693aadab17"
-        ],
-        [
-            "https://www.sabaidea.com/job",
-            "https://career.hrcando.ir/co/sabaidea/job-detail/e9adb29e-4ae6-4279-b90b-4b62cd8cb8d3"
-        ],
-        [
-            "https://www.sabaidea.com/job",
-            "https://career.hrcando.ir/co/sabaidea/job-detail/2af121fc-9e43-47e6-a493-cd46c8f8b964"
-        ],
-        [
-            "https://www.sabaidea.com/job",
-            "https://career.hrcando.ir/co/sabaidea/job-detail/910027fd-9ea8-43f9-a165-bd40ce5440ee"
-        ],
-        [
-            "https://www.sabaidea.com/job",
-            "https://career.hrcando.ir/co/sabaidea/job-detail/421359a1-7f5b-4816-a98e-e42fdec4c577"
-        ],
-        [
-            "https://www.sabaidea.com/job",
-            "https://career.hrcando.ir/co/sabaidea/job-detail/38213743-6bf0-43e3-994f-2345e09f0c81"
-        ],
-        [
-            "https://www.sabaidea.com/job",
-            "https://www.aparat.com/sabaidea"
-        ],
-        [
-            "https://www.sabaidea.com/job",
-            "https://career.hrcando.ir/co/sabaidea/job-detail/19c21ae3-6f1b-4ae8-9670-f01857e4e9b4"
-        ],
-        [
-            "https://www.sabaidea.com/job",
-            "https://career.hrcando.ir/co/sabaidea/job-detail/d5bbeea5-f098-4606-998c-78b15d6fb709"
-        ],
-        [
-            "https://www.sabaidea.com/job",
-            "https://career.hrcando.ir/co/sabaidea/job-detail/f7b41d9f-5fa8-44fc-af76-69c716eb3271"
-        ],
-        [
-            "https://www.sabaidea.com/job",
-            "https://www.instagram.com/sabaidea"
-        ],
-        [
-            "https://www.sabaidea.com/job",
-            "https://career.hrcando.ir/co/sabaidea/job-detail/450f71bb-34e3-465c-8905-f75a5cc49249"
-        ],
-        [
-            "https://www.sabaidea.com/story",
-            "https://www.linkedin.com/company/9272995"
-        ],
-        [
-            "https://www.sabaidea.com/story",
-            "https://www.aparat.com/sabaidea"
-        ],
-        [
-            "https://www.sabaidea.com/story",
-            "https://twitter.com/SabaIdea"
-        ],
-        [
-            "https://www.sabaidea.com/story",
-            "https://www.instagram.com/sabaidea"
-        ],
-        [
-            "https://www.sabaidea.com/products",
-            "https://www.aparat.com/sabaidea"
-        ],
-        [
-            "https://www.sabaidea.com/products",
-            "http://aparat.com"
-        ],
-        [
-            "https://www.sabaidea.com/products",
-            "https://www.aparatsport.com"
-        ],
-        [
-            "https://www.sabaidea.com/products",
-            "https://www.linkedin.com/company/9272995"
-        ],
-        [
-            "https://www.sabaidea.com/products",
-            "http://filimo.com"
-        ],
-        [
-            "https://www.sabaidea.com/products",
-            "https://www.instagram.com/sabaidea"
-        ],
-        [
-            "https://www.sabaidea.com/products",
-            "https://twitter.com/SabaIdea"
-        ],
-        [
-            "https://www.sabaidea.com/products",
-            "https://www.filimo.com/kids"
-        ],
-        [
-            "https://www.sabaidea.com/products",
-            "https://www.filimo.com/kids/"
-        ],
-        [
-            "https://www.sabaidea.com/products",
-            "https://www.filimo.school"
-        ],
-        [
-            "https://www.sabaidea.com/products",
-            "http://sabavision.com"
-        ],
-        [
-            "https://www.sabaidea.com/products",
-            "http://cinematicket.org"
-        ],
-        [
-            "https://www.sabaidea.com/contact",
-            "https://www.linkedin.com/company/9272995"
-        ],
-        [
-            "https://www.sabaidea.com/contact",
-            "https://www.aparat.com/sabaidea"
-        ],
-        [
-            "https://www.sabaidea.com/contact",
-            "https://twitter.com/SabaIdea"
-        ],
-        [
-            "https://www.sabaidea.com/contact",
-            "https://www.instagram.com/sabaidea"
-        ],
-        [
-            "https://www.sabaidea.com/",
-            "https://www.aparat.com/sabaidea"
-        ],
-        [
-            "https://www.sabaidea.com/",
-            "http://shanbemag.ir/%D8%A2%D9%BE%D8%A7%D8%B1%D8%A7%D8%AA%D8%8C-%DB%8C%DA%A9-%DA%A9%D8%B3%D8%A8%E2%80%8C%D9%88%DA%A9%D8%A7%D8%B1-300-%D9%85%DB%8C%D9%84%DB%8C%D9%88%D9%86-%D8%AF%D9%84%D8%A7%D8%B1%DB%8C"
-        ],
-        [
-            "https://www.sabaidea.com/",
-            "https://digiato.com/article/2018/06/10/%DA%AF%D9%81%D8%AA%DA%AF%D9%88-%D8%A8%D8%A7-%D9%85%D8%AF%DB%8C%D8%B1%D8%B9%D8%A7%D9%85%D9%84-%D8%B5%D8%A8%D8%A7-%D8%A7%DB%8C%D8%AF%D9%87/"
-        ],
-        [
-            "https://www.sabaidea.com/",
-            "https://sabaidea.com/life/480-%D8%B3%D9%81%D8%B1%D9%87%D8%A7%DB%8C-%DA%AF%D8%B1%D9%88%D9%87%DB%8C"
-        ],
-        [
-            "https://www.sabaidea.com/",
-            "https://job.sabaidea.com"
-        ],
-        [
-            "https://www.sabaidea.com/",
-            "https://www.linkedin.com/company/9272995"
-        ],
-        [
-            "https://www.sabaidea.com/",
-            "https://twitter.com/SabaIdea"
-        ],
-        [
-            "https://www.sabaidea.com/",
-            "https://www.instagram.com/sabaidea"
-        ],
-        [
-            "https://www.sabaidea.com/life",
-            "https://www.aparat.com/sabaidea"
-        ],
-        [
-            "https://www.sabaidea.com/life",
-            "https://www.linkedin.com/company/9272995"
-        ],
-        [
-            "https://www.sabaidea.com/life",
-            "https://job.sabaidea.com"
-        ],
-        [
-            "https://www.sabaidea.com/life",
-            "https://twitter.com/SabaIdea"
-        ],
-        [
-            "https://www.sabaidea.com/life",
-            "https://www.instagram.com/sabaidea"
-        ],
-        [
-            "https://www.sabaidea.com/press",
-            "https://www.linkedin.com/company/9272995"
-        ],
-        [
-            "https://www.sabaidea.com/press",
-            "https://www.aparat.com/sabaidea"
-        ],
-        [
-            "https://www.sabaidea.com/press",
-            "https://twitter.com/SabaIdea"
-        ],
-        [
-            "https://www.sabaidea.com/press",
-            "https://www.instagram.com/sabaidea"
-        ],
-        [
-            "https://app.filimo.school/courses/3",
-            "https://t.me/Filimoschool"
-        ],
-        [
-            "https://app.filimo.school/courses/3",
-            "https://blog.filimo.school"
-        ],
-        [
-            "https://app.filimo.school/courses/3",
-            "https://twitter.com/FilimoSchool"
-        ],
-        [
-            "https://app.filimo.school/courses/3",
-            "https://instagram.com/filimo.madrese"
-        ],
-        [
-            "https://app.filimo.school/courses/3",
-            "https://static.cdn.asset.filimo.school/flmt/FilimoSchool-Android-4.9.4-w-1.apk"
-        ],
-        [
-            "https://app.filimo.school/contact",
-            "https://t.me/Filimoschool"
-        ],
-        [
-            "https://app.filimo.school/contact",
-            "https://blog.filimo.school"
-        ],
-        [
-            "https://app.filimo.school/contact",
-            "https://twitter.com/FilimoSchool"
-        ],
-        [
-            "https://app.filimo.school/contact",
-            "https://instagram.com/filimo.madrese"
-        ],
-        [
-            "https://app.filimo.school/contact",
-            "https://static.cdn.asset.filimo.school/flmt/FilimoSchool-Android-4.9.4-w-1.apk"
-        ],
-        [
-            "https://blog.filimo.school",
-            "https://app.filimo.school/courses/3"
-        ],
-        [
-            "https://blog.filimo.school",
-            "https://app.filimo.school/courses/10"
-        ],
-        [
-            "https://blog.filimo.school",
-            "https://app.filimo.school/courses/7"
-        ],
-        [
-            "https://blog.filimo.school",
-            "https://app.filimo.school/courses/4"
-        ],
-        [
-            "https://blog.filimo.school",
-            "https://app.filimo.school/courses/9"
-        ],
-        [
-            "https://blog.filimo.school",
-            "https://t.me/Filimoschool"
-        ],
-        [
-            "https://blog.filimo.school",
-            "https://app.filimo.school/courses/2"
-        ],
-        [
-            "https://blog.filimo.school",
-            "https://app.filimo.school/"
-        ],
-        [
-            "https://blog.filimo.school",
-            "https://app.filimo.school/download"
-        ],
-        [
-            "https://blog.filimo.school",
-            "https://twitter.com/filimoschool"
-        ],
-        [
-            "https://blog.filimo.school",
-            "https://instagram.com/filimo.madrese"
-        ],
-        [
-            "https://blog.filimo.school",
-            "https://app.filimo.school/courses/6"
-        ],
-        [
-            "https://blog.filimo.school",
-            "https://app.filimo.school/auth?redirect=%2Fprofile%2Fpayment&source=header"
-        ],
-        [
-            "https://blog.filimo.school",
-            "https://app.filimo.school/courses/8"
-        ],
-        [
-            "https://blog.filimo.school",
-            "https://app.filimo.school/courses/5"
-        ],
-        [
-            "https://blog.filimo.school",
-            "https://app.filimo.school/courses/1"
-        ],
-        [
-            "https://app.filimo.school/courses/12",
-            "https://t.me/Filimoschool"
-        ],
-        [
-            "https://app.filimo.school/courses/12",
-            "https://blog.filimo.school"
-        ],
-        [
-            "https://app.filimo.school/courses/12",
-            "https://twitter.com/FilimoSchool"
-        ],
-        [
-            "https://app.filimo.school/courses/12",
-            "https://instagram.com/filimo.madrese"
-        ],
-        [
-            "https://app.filimo.school/courses/12",
-            "https://static.cdn.asset.filimo.school/flmt/FilimoSchool-Android-4.9.4-w-1.apk"
-        ],
-        [
-            "https://app.filimo.school/courses/8",
-            "https://t.me/Filimoschool"
-        ],
-        [
-            "https://app.filimo.school/courses/8",
-            "https://blog.filimo.school"
-        ],
-        [
-            "https://app.filimo.school/courses/8",
-            "https://twitter.com/FilimoSchool"
-        ],
-        [
-            "https://app.filimo.school/courses/8",
-            "https://instagram.com/filimo.madrese"
-        ],
-        [
-            "https://app.filimo.school/courses/8",
-            "https://static.cdn.asset.filimo.school/flmt/FilimoSchool-Android-4.9.4-w-1.apk"
-        ],
-        [
-            "https://app.filimo.school/courses/1",
-            "https://t.me/Filimoschool"
-        ],
-        [
-            "https://app.filimo.school/courses/1",
-            "https://blog.filimo.school"
-        ],
-        [
-            "https://app.filimo.school/courses/1",
-            "https://twitter.com/FilimoSchool"
-        ],
-        [
-            "https://app.filimo.school/courses/1",
-            "https://instagram.com/filimo.madrese"
-        ],
-        [
-            "https://app.filimo.school/courses/1",
-            "https://static.cdn.asset.filimo.school/flmt/FilimoSchool-Android-4.9.4-w-1.apk"
-        ],
-        [
-            "https://app.filimo.school/courses/9",
-            "https://t.me/Filimoschool"
-        ],
-        [
-            "https://app.filimo.school/courses/9",
-            "https://blog.filimo.school"
-        ],
-        [
-            "https://app.filimo.school/courses/9",
-            "https://twitter.com/FilimoSchool"
-        ],
-        [
-            "https://app.filimo.school/courses/9",
-            "https://instagram.com/filimo.madrese"
-        ],
-        [
-            "https://app.filimo.school/courses/9",
-            "https://static.cdn.asset.filimo.school/flmt/FilimoSchool-Android-4.9.4-w-1.apk"
-        ],
-        [
-            "https://app.filimo.school/courses/10",
-            "https://t.me/Filimoschool"
-        ],
-        [
-            "https://app.filimo.school/courses/10",
-            "https://blog.filimo.school"
-        ],
-        [
-            "https://app.filimo.school/courses/10",
-            "https://twitter.com/FilimoSchool"
-        ],
-        [
-            "https://app.filimo.school/courses/10",
-            "https://instagram.com/filimo.madrese"
-        ],
-        [
-            "https://app.filimo.school/courses/10",
-            "https://static.cdn.asset.filimo.school/flmt/FilimoSchool-Android-4.9.4-w-1.apk"
-        ],
-        [
-            "https://app.filimo.school/courses/7",
-            "https://t.me/Filimoschool"
-        ],
-        [
-            "https://app.filimo.school/courses/7",
-            "https://blog.filimo.school"
-        ],
-        [
-            "https://app.filimo.school/courses/7",
-            "https://twitter.com/FilimoSchool"
-        ],
-        [
-            "https://app.filimo.school/courses/7",
-            "https://instagram.com/filimo.madrese"
-        ],
-        [
-            "https://app.filimo.school/courses/7",
-            "https://static.cdn.asset.filimo.school/flmt/FilimoSchool-Android-4.9.4-w-1.apk"
-        ],
-        [
-            "https://app.filimo.school/courses/2",
-            "https://t.me/Filimoschool"
-        ],
-        [
-            "https://app.filimo.school/courses/2",
-            "https://blog.filimo.school"
-        ],
-        [
-            "https://app.filimo.school/courses/2",
-            "https://twitter.com/FilimoSchool"
-        ],
-        [
-            "https://app.filimo.school/courses/2",
-            "https://instagram.com/filimo.madrese"
-        ],
-        [
-            "https://app.filimo.school/courses/2",
-            "https://static.cdn.asset.filimo.school/flmt/FilimoSchool-Android-4.9.4-w-1.apk"
-        ],
-        [
-            "https://app.filimo.school/courses/13",
-            "https://t.me/Filimoschool"
-        ],
-        [
-            "https://app.filimo.school/courses/13",
-            "https://blog.filimo.school"
-        ],
-        [
-            "https://app.filimo.school/courses/13",
-            "https://twitter.com/FilimoSchool"
-        ],
-        [
-            "https://app.filimo.school/courses/13",
-            "https://instagram.com/filimo.madrese"
-        ],
-        [
-            "https://app.filimo.school/courses/13",
-            "https://static.cdn.asset.filimo.school/flmt/FilimoSchool-Android-4.9.4-w-1.apk"
-        ],
-        [
-            "https://app.filimo.school/courses/4",
-            "https://t.me/Filimoschool"
-        ],
-        [
-            "https://app.filimo.school/courses/4",
-            "https://blog.filimo.school"
-        ],
-        [
-            "https://app.filimo.school/courses/4",
-            "https://twitter.com/FilimoSchool"
-        ],
-        [
-            "https://app.filimo.school/courses/4",
-            "https://instagram.com/filimo.madrese"
-        ],
-        [
-            "https://app.filimo.school/courses/4",
-            "https://static.cdn.asset.filimo.school/flmt/FilimoSchool-Android-4.9.4-w-1.apk"
-        ],
-        [
-            "https://app.filimo.school/",
-            "https://t.me/Filimoschool"
-        ],
-        [
-            "https://app.filimo.school/",
-            "https://blog.filimo.school"
-        ],
-        [
-            "https://app.filimo.school/",
-            "https://twitter.com/FilimoSchool"
-        ],
-        [
-            "https://app.filimo.school/",
-            "https://instagram.com/filimo.madrese"
-        ],
-        [
-            "https://app.filimo.school/",
-            "https://static.cdn.asset.filimo.school/flmt/FilimoSchool-Android-4.9.4-w-1.apk"
-        ],
-        [
-            "https://app.filimo.school/courses/6",
-            "https://t.me/Filimoschool"
-        ],
-        [
-            "https://app.filimo.school/courses/6",
-            "https://blog.filimo.school"
-        ],
-        [
-            "https://app.filimo.school/courses/6",
-            "https://twitter.com/FilimoSchool"
-        ],
-        [
-            "https://app.filimo.school/courses/6",
-            "https://instagram.com/filimo.madrese"
-        ],
-        [
-            "https://app.filimo.school/courses/6",
-            "https://static.cdn.asset.filimo.school/flmt/FilimoSchool-Android-4.9.4-w-1.apk"
-        ],
-        [
-            "https://app.filimo.school/courses/5",
-            "https://t.me/Filimoschool"
-        ],
-        [
-            "https://app.filimo.school/courses/5",
-            "https://blog.filimo.school"
-        ],
-        [
-            "https://app.filimo.school/courses/5",
-            "https://twitter.com/FilimoSchool"
-        ],
-        [
-            "https://app.filimo.school/courses/5",
-            "https://instagram.com/filimo.madrese"
-        ],
-        [
-            "https://app.filimo.school/courses/5",
-            "https://static.cdn.asset.filimo.school/flmt/FilimoSchool-Android-4.9.4-w-1.apk"
-        ],
-        [
-            "https://app.filimo.school/course/8w9op",
-            "https://t.me/Filimoschool"
-        ],
-        [
-            "https://app.filimo.school/course/8w9op",
-            "https://blog.filimo.school"
-        ],
-        [
-            "https://app.filimo.school/course/8w9op",
-            "https://twitter.com/FilimoSchool"
-        ],
-        [
-            "https://app.filimo.school/course/8w9op",
-            "https://instagram.com/filimo.madrese"
-        ],
-        [
-            "https://app.filimo.school/course/8w9op",
-            "https://static.cdn.asset.filimo.school/flmt/FilimoSchool-Android-4.9.4-w-1.apk"
-        ],
-        [
-            "https://app.filimo.school/course/82y5j",
-            "https://t.me/Filimoschool"
-        ],
-        [
-            "https://app.filimo.school/course/82y5j",
-            "https://blog.filimo.school"
-        ],
-        [
-            "https://app.filimo.school/course/82y5j",
-            "https://twitter.com/FilimoSchool"
-        ],
-        [
-            "https://app.filimo.school/course/82y5j",
-            "https://instagram.com/filimo.madrese"
-        ],
-        [
-            "https://app.filimo.school/course/82y5j",
-            "https://static.cdn.asset.filimo.school/flmt/FilimoSchool-Android-4.9.4-w-1.apk"
-        ],
-        [
-            "https://app.filimo.school/download",
-            "https://t.me/Filimoschool"
-        ],
-        [
-            "https://app.filimo.school/download",
-            "https://blog.filimo.school"
-        ],
-        [
-            "https://app.filimo.school/download",
-            "https://twitter.com/FilimoSchool"
-        ],
-        [
-            "https://app.filimo.school/download",
-            "https://static.cdn.asset.filimo.school/flmt/FilimoSchool-Android-4.9.4-w-1.apk"
-        ],
-        [
-            "https://app.filimo.school/download",
-            "https://instagram.com/filimo.madrese"
-        ],
-        [
-            "https://app.filimo.school/courses/11",
-            "https://t.me/Filimoschool"
-        ],
-        [
-            "https://app.filimo.school/courses/11",
-            "https://blog.filimo.school"
-        ],
-        [
-            "https://app.filimo.school/courses/11",
-            "https://twitter.com/FilimoSchool"
-        ],
-        [
-            "https://app.filimo.school/courses/11",
-            "https://instagram.com/filimo.madrese"
-        ],
-        [
-            "https://app.filimo.school/courses/11",
-            "https://static.cdn.asset.filimo.school/flmt/FilimoSchool-Android-4.9.4-w-1.apk"
         ]
     ]
 }
