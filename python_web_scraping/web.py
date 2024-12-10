@@ -4,7 +4,10 @@ import networkx as nx
 import plotly.graph_objects as go
 from collections import deque
 from urllib.parse import urlparse
+import json
+import os
 
+from urllib.parse import urlparse
 
 def get_links(url, max_links=20):
     """Extract links from a web page, limited to a specified number."""
@@ -13,11 +16,27 @@ def get_links(url, max_links=20):
         response = requests.get(url, timeout=5, headers=headers)
         print(f"Response status: {response.status_code}")
         soup = BeautifulSoup(response.text, 'html.parser')
+
+        # Parse the starting domain
+        parsed_start_url = urlparse(url)
+        start_domain = parsed_start_url.netloc
+
         links = set()
-        for a_tag in soup.find_all('a', href=True)[:max_links]:
+        for a_tag in soup.find_all('a', href=True):
             href = a_tag['href']
-            if href.startswith('http'):
-                links.add(href)
+            if href.startswith('http'):  # Full URL
+                parsed_href = urlparse(href)
+                if parsed_href.netloc != start_domain:  # Exclude same-domain links
+                    links.add(href)
+            elif href.startswith('/'):  # Relative URL
+                full_url = f"{parsed_start_url.scheme}://{start_domain}{href}"
+                parsed_full_url = urlparse(full_url)
+                if parsed_full_url.netloc != start_domain:  # Exclude same-domain links
+                    links.add(full_url)
+
+            if len(links) >= max_links:  # Stop if we reach the max_links limit
+                break
+
         print(f"Extracted links: {len(links)}")
         return links
     except Exception as e:
@@ -46,6 +65,30 @@ def crawl_web(start_url, max_depth=10, max_links=20):
 
     print(f"Total nodes: {graph.number_of_nodes()}")
     print(f"Total edges: {graph.number_of_edges()}")
+    return graph
+
+
+def save_graph_to_json(graph, file_path):
+    """Save the graph nodes and edges to a JSON file."""
+    data = {
+        "nodes": list(graph.nodes(data=True)),
+        "edges": list(graph.edges())
+    }
+    with open(file_path, 'w') as f:
+        json.dump(data, f, indent=4)
+    print(f"Graph saved to {file_path}.")
+
+
+def load_graph_from_json(file_path):
+    """Load the graph nodes and edges from a JSON file."""
+    with open(file_path, 'r') as f:
+        data = json.load(f)
+    graph = nx.DiGraph()
+    for node, attrs in data["nodes"]:
+        graph.add_node(node, **attrs)
+    for edge in data["edges"]:
+        graph.add_edge(*edge)
+    print(f"Graph loaded from {file_path}.")
     return graph
 
 
@@ -157,9 +200,18 @@ def display_colored_graph(graph, order, start_node, end_node, output_file, color
 
 
 if __name__ == "__main__":
+    folder_path = os.path.dirname(os.path.abspath(__file__))  # Save files in script's directory
+
     start_url = input("Enter the start URL of the web page: ")
     max_depth = int(input("Enter the crawling depth (maximum 10): "))
+    json_file = os.path.join(folder_path, "web_graph.json")
+
+    # Crawl and save the graph
     web_graph = crawl_web(start_url, max_depth, max_links=20)
+    save_graph_to_json(web_graph, json_file)
+
+    # Load the graph from JSON
+    web_graph = load_graph_from_json(json_file)
 
     # Display discovered nodes and ask for the end node
     print("\nDiscovered Nodes:")
@@ -174,6 +226,9 @@ if __name__ == "__main__":
     dfs_result = dfs(web_graph, start_url)
 
     # Generate HTML files for each traversal
-    display_colored_graph(web_graph, [], start_node=start_url, end_node=end_node, output_file="web_graph.html", color="#87CEEB")
-    display_colored_graph(web_graph, bfs_result, start_node=start_url, end_node=end_node, output_file="bfs_graph.html", color="green")
-    display_colored_graph(web_graph, dfs_result, start_node=start_url, end_node=end_node, output_file="dfs_graph.html", color="blue")
+    display_colored_graph(web_graph, [], start_node=start_url, end_node=end_node,
+                          output_file=os.path.join(folder_path, "web_graph.html"), color="#87CEEB")
+    display_colored_graph(web_graph, bfs_result, start_node=start_url, end_node=end_node,
+                          output_file=os.path.join(folder_path, "bfs_graph.html"), color="green")
+    display_colored_graph(web_graph, dfs_result, start_node=start_url, end_node=end_node,
+                          output_file=os.path.join(folder_path, "dfs_graph.html"), color="blue")
