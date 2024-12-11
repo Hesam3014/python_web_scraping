@@ -332,7 +332,7 @@ if __name__ == "__main__":
     folder_path = os.path.dirname(os.path.abspath(__file__))  # Save files in script's directory
 
     start_url = input("Enter the start URL of the web page: ")
-    max_depth = int(input("Enter the crawling depth (maximum 10): "))
+    max_depth = int(input("Enter crawling depth (maximum 10): "))
     json_file = os.path.join(folder_path, "web_graph.json")
 
     # Crawl and save the graph
